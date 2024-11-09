@@ -1,0 +1,8 @@
+<form th:action="@{/user}" th:object="${usuario}" method="post">
+    <input type="text" th:field="*{nombre}" placeholder="Nombre"/>
+    <input type="text" th:field="*{apellido}" placeholder="Apellido"/>
+    <input type="text" th:field="*{username}" placeholder="Username"/>
+    <input type="password" th:field="*{password}" placeholder="Password"/>
+    <input type="email" th:field="*{email}" placeholder="Email"/>
+    <button type="submit">Enviar</button>
+</form>
